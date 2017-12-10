@@ -4,6 +4,7 @@
 
 const key keymap[N_KEYS_EXTENDED] = {
     // Keyboard keys
+    // each 12-long "block" starts with some hex LED code, which is incremented by 0x0c for each row
     { "esc",        0x00, KEY_ESC },
     { "f1",         0x0c, KEY_F1 },
     { "f2",         0x18, KEY_F2 },
@@ -16,6 +17,7 @@ const key keymap[N_KEYS_EXTENDED] = {
     { "f9",         0x6c, KEY_F9 },
     { "f10",        0x78, KEY_F10 },
     { "f11",        0x84, KEY_F11 },
+
     { "grave",      0x01, KEY_GRAVE },
     { "1",          0x0d, KEY_1 },
     { "2",          0x19, KEY_2 },
@@ -28,6 +30,7 @@ const key keymap[N_KEYS_EXTENDED] = {
     { "9",          0x6d, KEY_9 },
     { "0",          0x79, KEY_0 },
     { "minus",      0x85, KEY_MINUS },
+
     { "tab",        0x02, KEY_TAB },
     { "q",          0x0e, KEY_Q },
     { "w",          0x1a, KEY_W },
@@ -40,6 +43,7 @@ const key keymap[N_KEYS_EXTENDED] = {
     { "o",          0x6e, KEY_O },
     { "p",          0x7a, KEY_P },
     { "lbrace",     0x86, KEY_LEFTBRACE },
+
     { "caps",       0x03, KEY_CAPSLOCK },
     { "a",          0x0f, KEY_A },
     { "s",          0x1b, KEY_S },
@@ -52,6 +56,7 @@ const key keymap[N_KEYS_EXTENDED] = {
     { "l",          0x6f, KEY_L },
     { "colon",      0x7b, KEY_SEMICOLON },
     { "quote",      0x87, KEY_APOSTROPHE },
+
     { "lshift",     0x04, KEY_LEFTSHIFT },
     { "bslash_iso", 0x10, KEY_102ND },
     { "z",          0x1c, KEY_Z },
@@ -64,6 +69,7 @@ const key keymap[N_KEYS_EXTENDED] = {
     { "comma",      0x70, KEY_COMMA },
     { "dot",        0x7c, KEY_DOT },
     { "slash",      0x88, KEY_SLASH },
+
     { "lctrl",      0x05, KEY_LEFTCTRL },
     { "lwin",       0x11, KEY_LEFTMETA },
     { "lalt",       0x1d, KEY_LEFTALT },
@@ -76,6 +82,7 @@ const key keymap[N_KEYS_EXTENDED] = {
     { "rmenu",      0x71, KEY_COMPOSE },
     { 0,            -1,   KEY_NONE },
     { "light",      0x89, KEY_CORSAIR },
+
     { "f12",        0x06, KEY_F12 },
     { "prtscn",     0x12, KEY_SYSRQ },
     { "scroll",     0x1e, KEY_SCROLLLOCK },
@@ -88,6 +95,7 @@ const key keymap[N_KEYS_EXTENDED] = {
     { "hash",       0x72, KEY_BACKSLASH_ISO },
     { "enter",      0x7e, KEY_ENTER },
     { "ro",         0x8a, KEY_RO },
+
     { "equal",      0x07, KEY_EQUAL },
     { "yen",        0x13, KEY_YEN },
     { "bspace",     0x1f, KEY_BACKSPACE },
@@ -100,6 +108,7 @@ const key keymap[N_KEYS_EXTENDED] = {
     { "left",       0x73, KEY_LEFT },
     { "down",       0x7f, KEY_DOWN },
     { "right",      0x8b, KEY_RIGHT },
+
     { "lock",       0x08, KEY_CORSAIR },
     { "mute",       0x14, KEY_MUTE },
     { "stop",       0x20, KEY_STOPCD },
@@ -112,6 +121,7 @@ const key keymap[N_KEYS_EXTENDED] = {
     { "numminus",   0x74, KEY_KPMINUS },
     { "numplus",    0x80, KEY_KPPLUS },
     { "numenter",   0x8c, KEY_KPENTER },
+
     { "num7",       0x09, KEY_KP7 },
     { "num8",       0x15, KEY_KP8 },
     { "num9",       0x21, KEY_KP9 },
@@ -124,6 +134,7 @@ const key keymap[N_KEYS_EXTENDED] = {
     { "num3",       0x75, KEY_KP3 },
     { "num0",       0x81, KEY_KP0 },
     { "numdot",     0x8d, KEY_KPDOT },
+
     { "g1",         0x0a, KEY_CORSAIR },
     { "g2",         0x16, KEY_CORSAIR },
     { "g3",         0x22, KEY_CORSAIR },
@@ -134,8 +145,9 @@ const key keymap[N_KEYS_EXTENDED] = {
     { "g8",         0x5e, KEY_CORSAIR },
     { "g9",         0x6a, KEY_CORSAIR },
     { "g10",        0x76, KEY_CORSAIR },
-    { "volup",      0x20, KEY_VOLUMEUP },
-    { "voldn",      0x2c, KEY_VOLUMEDOWN },
+    { "volup",      0x82, KEY_VOLUMEUP },
+    { "voldn",      0x8e, KEY_VOLUMEDOWN },
+
     { "mr",         0x0b, KEY_CORSAIR },
     { "m1",         0x17, KEY_CORSAIR },
     { "m2",         0x23, KEY_CORSAIR },
@@ -149,6 +161,7 @@ const key keymap[N_KEYS_EXTENDED] = {
     { "g17",        0x83, KEY_CORSAIR },
     { "g18",        0x8f, KEY_CORSAIR },
     { "muhenkan",   0x29, KEY_MUHENKAN },
+
     { "henkan",     0x41, KEY_HENKAN },
     { "fn",         0x65, KEY_FN },         // STRAFE Fn - rwin on other keyboards
     { 0,            -1,   KEY_NONE },
